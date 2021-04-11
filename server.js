@@ -268,6 +268,7 @@ router.route("/movies")
 			movie.year_released = req.body.year_released;
 			movie.genre = req.body.genre;
 			movie.actors = req.body.actors;
+			movie.imageUrl = req.body.imageUrl
 
 			movie.save(function (err) {
 				if (err) {
